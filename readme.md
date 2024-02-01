@@ -1,37 +1,17 @@
 # Desenvolvimento front end utilizando Next.js e Tailwind css
 
-![enter image description here](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/imagem%2001.jpg?raw=true)
+![](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/imagem%2001.jpg?raw=true)
 
-## Requisitos Funcionais
-
-- Node.js na versão v18.18.2 ou superior
-- Git versão 1.8.5.2 ou superior
-
-### Ambiente de Desenvolvimento Integrado (IDE)
-
-- Recomendamos o uso do VSCode ou PyCharm, na versão mais recente.
-
-### Sistema Operacional (SO)
-
-- O projeto foi testado e é compatível com Windows e Linux.
-
-## Requisitos Não Funcionais
-
-### Conhecimentos Necessários
-
-- Python: Conhecimento básico é recomendado.
-- Node.js: Conhecimento básico é suficiente.
-- Git: Conhecimento básico é necessário.
 
 ## Conceitos iniciais
 
 O Next.js é um framework JavaScript de código aberto que funciona em conjunto com o React para facilitar o desenvolvimento de aplicações web. Ele oferece uma camada adicional de abstração sobre o React, fornecendo funcionalidades extras para construir aplicativos web de forma eficiente.
 
-![enter image description here](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/Group%203078.png?raw=true)
+![](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/Group%203078.png?raw=true)
 
 Já o Tailwind CSS é um framework de estilo para a construção de interfaces de usuário em projetos web. Ao contrário de outros frameworks CSS que oferecem componentes pré-construídos, o Tailwind CSS adota uma abordagem diferente, fornecendo uma série de classes utilitárias que você pode aplicar diretamente nos elementos HTML para estilizar sua interface.
 
-![enter image description here](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/tailwind.png?raw=true)
+![](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/tailwind.png?raw=true)
 
 # Comparação entre React com e sem Tailwind CSS
 
