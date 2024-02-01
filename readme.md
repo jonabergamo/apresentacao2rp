@@ -1,8 +1,29 @@
-## Desenvolvimento front end utilizando Next.js e Tailwind css
+# Desenvolvimento front end utilizando Next.js e Tailwind css
 
 ![enter image description here](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/imagem%2001.jpg?raw=true)
 
-### Conceitos iniciais:
+## Requisitos Funcionais
+
+- Node.js na versão v18.18.2 ou superior
+- Git versão 1.8.5.2 ou superior
+
+### Ambiente de Desenvolvimento Integrado (IDE)
+
+- Recomendamos o uso do VSCode ou PyCharm, na versão mais recente.
+
+### Sistema Operacional (SO)
+
+- O projeto foi testado e é compatível com Windows e Linux.
+
+## Requisitos Não Funcionais
+
+### Conhecimentos Necessários
+
+- Python: Conhecimento básico é recomendado.
+- Node.js: Conhecimento básico é suficiente.
+- Git: Conhecimento básico é necessário.
+
+## Conceitos iniciais
 
 O Next.js é um framework JavaScript de código aberto que funciona em conjunto com o React para facilitar o desenvolvimento de aplicações web. Ele oferece uma camada adicional de abstração sobre o React, fornecendo funcionalidades extras para construir aplicativos web de forma eficiente.
 
@@ -32,7 +53,6 @@ O desenvolvimento web moderno frequentemente envolve o uso de bibliotecas e fram
 
     - **URL:** [trivago](https://www.trivago.com.br/)
     - **Detalhes:** Trivago, um popular motor de busca de hotéis, é conhecido por ter adotado Tailwind CSS em seu desenvolvimento web.
-    -
 
 ## **React sem Tailwind CSS**
 
@@ -202,3 +222,122 @@ export default function Home() {
 ```
 
 `* O código acima foi resumido para fins didáticos *`
+
+## Next.js como ferramenta
+
+### Por que utilizar o next.js como framework React?
+
+Utilizar o Next.js como framework React oferece diversas vantagens:
+
+1.  **Desenvolvimento Rápido:** O Next.js simplifica o desenvolvimento avançado de aplicativos React, proporcionando recursos prontos para uso e um compilador próprio que acelera os tempos de construção.
+2.  **Performance:** O Next.js permite pré-carregar dados no servidor, resultando em tempos de carregamento mais rápidos em comparação com aplicações React tradicionais.
+3.  **Renderização e SEO:** Oferece pré-renderização, enquanto o React utiliza renderização no lado do cliente. A pré-renderização facilita estratégias eficazes de SEO, melhorando a classificação nos motores de busca.
+4.  **Roteamento Estruturado:** O Next.js fornece um sistema de arquivos pré-definido para roteamento, simplificando a configuração de páginas em comparação com opções de bibliotecas de roteamento do React.
+5.  **SEO Aprimorado:** A capacidade do Next.js de realizar renderização no lado do servidor (SSR) melhora as classificações de SEO, proporcionando uma experiência de usuário otimizada com tempos de carregamento eficientes.
+6.  **Pré-renderização Avançada:** Oferece métodos avançados de renderização, incluindo Client-Side Rendering (CSR), Server-Side Rendering (SSR), Static Site Generation (SSG) e Incremental Static Regeneration (ISR).
+7.  **Facilidade de Configuração:** O Next.js oferece opções de configuração automáticas e manuais, com a ferramenta CLI create-next-app agilizando a inicialização do projeto.
+8.  **Navegação Otimizada:** Utiliza componentes de link personalizados para otimizar a navegação e pré-carregar dados em segundo plano, melhorando o desempenho da aplicação.
+
+Em resumo, o Next.js é especialmente benéfico para projetos React que se beneficiam de pré-renderização, como lojas online, aplicativos de mídia social, sistemas de reserva de ingressos e plataformas de educação. Ele oferece uma experiência de desenvolvimento mais rápida, melhor desempenho e recursos avançados de renderização, tornando-o uma escolha sólida para projetos ambiciosos.
+
+<hr>
+
+# Quiz
+
+<details>
+  <summary><strong>Por que usar o Next.js?</strong></summary>
+
+O Next.js facilita a construção de interfaces de usuário para a web, adicionando recursos sobre o React. Ele possui uma comunidade robusta, documentação sólida e está ganhando popularidade entre os desenvolvedores web front-end.
+
+</details>
+
+<details>
+  <summary><strong>O React é melhor que o Next.js?</strong></summary>
+
+Não, o React não é melhor que o Next.js. Os desenvolvedores devem escolher um framework com base no que funciona melhor para o projeto e suas prioridades. (Um site focado em SEO, por exemplo, pode se beneficiar do Next.js, pois reduz os tempos de carregamento da aplicação.)
+
+</details>
+
+<details>
+  <summary><strong>Por que o Next.js é melhor que o React?</strong></summary>
+
+O Next.js oferece velocidades de desenvolvimento aprimoradas, tempos de carregamento de aplicativos reduzidos e pré-renderização.
+
+</details>
+
+<details>
+  <summary><strong>Qual é a diferença entre Next.js e React?</strong></summary>
+
+Next.js é um framework React com funcionalidades adicionadas prontas para uso. React é uma biblioteca JavaScript comum usada para construir interfaces de usuário interativas, especialmente para aplicativos web.
+
+</details>
+
+<details>
+  <summary><strong>Quais problemas o Next.js resolve?</strong></summary>
+
+Next.js fornece pré-renderização e pode melhorar o desempenho de SEO com tempos de carregamento de aplicativos reduzidos.
+
+</details>
+
+<details>
+  <summary><strong>Por que escolher o React.js?</strong></summary>
+
+React é menos opinativo e mais estabelecido do que o Next.js, oferecendo aos desenvolvedores maior flexibilidade e recursos extensivos.
+
+</details>
+
+<details>
+  <summary><strong>O React e o React.js são a mesma coisa?</strong></summary>
+
+Sim, ambos os termos se referem à mesma biblioteca JavaScript.
+
+</details>
+
+<details>
+  <summary><strong>O Next.js é um framework?</strong></summary>
+
+Sim, o Next.js é um framework de código aberto baseado no React.
+
+</details>
+
+<details>
+  <summary><strong>Por que usar o Tailwind CSS?</strong></summary>
+
+O Tailwind CSS é uma ferramenta utility-first que oferece um conjunto amplo de classes predefinidas para estilização, proporcionando maior flexibilidade e controle sobre o design do seu projeto.
+
+</details>
+
+<details>
+  <summary><strong>Quais são as vantagens do Tailwind CSS?</strong></summary>
+
+- **Customização:** O Tailwind permite personalizar as classes para atender às necessidades específicas do seu projeto.
+- **Produtividade:** A abordagem utility-first acelera o desenvolvimento, reduzindo a necessidade de escrever CSS personalizado.
+- **Manutenção:** Classes padronizadas facilitam a manutenção do estilo em todo o projeto.
+
+</details>
+
+<details>
+  <summary><strong>O que diferencia o Tailwind de outros frameworks CSS?</strong></summary>
+
+- **Sem predefinições de estilo:** Ao contrário de alguns frameworks, o Tailwind não impõe estilos predefinidos, permitindo uma aparência única para cada projeto.
+- **Configuração flexível:** A configuração é altamente ajustável, proporcionando controle total sobre as classes disponíveis.
+
+</details>
+
+<details>
+  <summary><strong>Como posso personalizar o Tailwind para atender às necessidades específicas do meu projeto?</strong></summary>
+
+Você pode personalizar o Tailwind ajustando o arquivo de configuração `tailwind.config.js`, onde é possível adicionar novas classes, configurar cores, fontes e muito mais.
+
+</details>
+
+<details>
+  <summary><strong>O Tailwind é adequado para todos os projetos?</strong></summary>
+
+Embora o Tailwind seja adequado para muitos projetos, sua abordagem utility-first pode ser mais vantajosa em projetos pequenos a médios. Em projetos maiores, a gestão de classes pode se tornar mais complexa.
+
+</details>
+
+<hr>
+
+_Revisão Técnica:_ `Jonathan Oliveira Bergamo`
