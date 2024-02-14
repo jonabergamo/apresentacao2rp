@@ -2,7 +2,6 @@
 
 ![](https://github.com/jonabergamo/apresentacao2rp/blob/master/imagens/imagem%2001.jpg?raw=true)
 
-
 ## Conceitos iniciais
 
 O Next.js é um framework JavaScript de código aberto que funciona em conjunto com o React para facilitar o desenvolvimento de aplicações web. Ele oferece uma camada adicional de abstração sobre o React, fornecendo funcionalidades extras para construir aplicativos web de forma eficiente.
@@ -219,6 +218,81 @@ Utilizar o Next.js como framework React oferece diversas vantagens:
 8.  **Navegação Otimizada:** Utiliza componentes de link personalizados para otimizar a navegação e pré-carregar dados em segundo plano, melhorando o desempenho da aplicação.
 
 Em resumo, o Next.js é especialmente benéfico para projetos React que se beneficiam de pré-renderização, como lojas online, aplicativos de mídia social, sistemas de reserva de ingressos e plataformas de educação. Ele oferece uma experiência de desenvolvimento mais rápida, melhor desempenho e recursos avançados de renderização, tornando-o uma escolha sólida para projetos ambiciosos.
+
+## Criação de Rotas no Next.js
+
+O Next.js utiliza um sistema de roteamento baseado em arquivos, o que significa que as rotas são definidas pela estrutura de arquivos no diretório `app`. Isso torna a criação e gerenciamento de rotas incrivelmente simples e intuitivo. Vamos ver como isso funciona na prática.
+
+### Estrutura Básica de Rotas
+
+1.  **Página Inicial (`/`):**
+
+    - Para definir a página inicial do seu aplicativo, você cria um arquivo chamado `page.jsx` (ou `page.tsx` se estiver usando TypeScript) dentro do diretório `app`.Lembrando que um componente deve estar iniciado dentro do arquivo.
+
+    ```jsx
+    // app/page.jsx
+
+    export default function Page() {
+      return (
+        <>
+          <h1>Página Inicial</h1>
+        </>
+      );
+    }
+    ```
+
+2.  **Rotas Estáticas:**
+
+    - Cada diretório com um arquivo `page` JS ou TSX dentro do diretório `app` representa uma rota estática. Por exemplo, criar `page.jsx` em `about` resulta na rota `/about`.
+
+    ```jsx
+    // app/about/page.jsx
+
+    export default function Page() {
+      return (
+        <>
+          <h1>Página Inicial</h1>
+        </>
+      );
+    }
+    ```
+
+3.  **Rotas Dinâmicas:**
+
+    - Para rotas dinâmicas, você usa colchetes para envolver o nome de um novo diretório na rota. Por exemplo, `posts/[id]` e dentro um arquivo `page.jsx`, resultando `/posts/1`, `/posts/2`, etc.
+
+    ```jsx
+    // pages/posts/[id].jsx
+
+    function PostPage({ params }) {
+      const { id } = params;
+
+      return <div>Post ID: {id}</div>;
+    }
+
+    export default PostPage;
+    ```
+
+4.  **Rotas de 404:**
+
+    É possivel utilizar da lógica de rotas dinâmicas para capturar rotas que não são existentes na página e exibir uma mensagem genérica, evitando erros na tela. Para fazer isso basta adicionar uma rota dinâmica junto com rotas estáticas.
+
+    Para ilustrar, considere a seguinte estrutura no diretório pages da sua aplicação:
+
+    - Um arquivo `page.jsx` que lida com a página raiz `(/)`.
+    - Um diretório `[not_found]` contendo um arquivo `page.jsx`, projetado para capturar e tratar qualquer rota que não corresponda a outros arquivos ou diretórios específicos.
+
+    ```jsx
+    // app/[not_found]/page.jsx
+
+    function NotFound({ params }) {
+      const { not_found } = params;
+
+      return <div>Página {not_found} não foi encontrada.</div>;
+    }
+
+    export default PostPage;
+    ```
 
 <hr>
 
