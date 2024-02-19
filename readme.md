@@ -37,25 +37,6 @@ Já o Tailwind CSS é um framework de estilo para a construção de interfaces d
 
 # Comparação entre React com e sem Tailwind CSS
 
-O desenvolvimento web moderno frequentemente envolve o uso de bibliotecas e frameworks para tornar o processo mais eficiente e agradável. React é uma biblioteca popular para construir interfaces de usuário, enquanto Tailwind CSS é um framework de estilo que oferece classes utilitárias para estilizar componentes. Vamos explorar as diferenças entre o uso de React com e sem Tailwind CSS, incluindo exemplos práticos.
-
-### Sites que utilizam tailwind css em seu interior
-
-1.  **Alibaba:**
-
-    - **URL:** [Alibaba Cloud](https://www.alibabacloud.com/)
-    - **Detalhes:** Alibaba Cloud, a divisão de computação em nuvem da Alibaba Group, utiliza Tailwind CSS em seu site.
-
-2.  **GitHub:**
-
-    - **URL:** [GitHub](https://github.com/)
-    - **Detalhes:** GitHub, uma das maiores plataformas de desenvolvimento colaborativo, adotou Tailwind CSS em algumas partes de sua interface.
-
-3.  **Trivago:**
-
-    - **URL:** [trivago](https://www.trivago.com.br/)
-    - **Detalhes:** Trivago, um popular motor de busca de hotéis, é conhecido por ter adotado Tailwind CSS em seu desenvolvimento web.
-
 ## **React sem Tailwind CSS**
 
 Ao usar React sem Tailwind CSS, os estilos geralmente são aplicados por meio de arquivos CSS ou módulos CSS. Cada componente React pode ter seu próprio arquivo de estilo, e a estilização é realizada de forma mais tradicional.
@@ -135,19 +116,78 @@ No exemplo acima, as classes como `bg-blue-500` (cor de fundo azul), `text-white
 - Consistência na estilização com classes predefinidas.
 - O Tailwind remove automaticamente todo o CSS não utilizado ao ser construído para produção, o que significa que seu pacote final de CSS é o menor possível. Na verdade, a maioria dos projetos que utilizam o Tailwind enviam menos de 10kB de CSS para o cliente.
 
+### Sites que utilizam tailwind css em seu interior
+
+1.  **Alibaba:**
+
+    - **URL:** [Alibaba Cloud](https://www.alibabacloud.com/)
+    - **Detalhes:** Alibaba Cloud, a divisão de computação em nuvem da Alibaba Group, utiliza Tailwind CSS em seu site.
+
+2.  **GitHub:**
+
+    - **URL:** [GitHub](https://github.com/)
+    - **Detalhes:** GitHub, uma das maiores plataformas de desenvolvimento colaborativo, adotou Tailwind CSS em algumas partes de sua interface.
+
+3.  **Trivago:**
+
+    - **URL:** [trivago](https://www.trivago.com.br/)
+    - **Detalhes:** Trivago, um popular motor de busca de hotéis, é conhecido por ter adotado Tailwind CSS em seu desenvolvimento web.
+
+## Next.js como ferramenta
+
+### Por que utilizar o next.js como framework React?
+
+Utilizar o Next.js como framework React oferece diversas vantagens:
+
+1.  **Desenvolvimento Rápido:** O Next.js simplifica o desenvolvimento avançado de aplicativos React, proporcionando recursos prontos para uso e um compilador próprio que acelera os tempos de construção.
+2.  **Performance:** O Next.js permite pré-carregar dados no servidor, resultando em tempos de carregamento mais rápidos em comparação com aplicações React tradicionais.
+3.  **Renderização e SEO:** Oferece pré-renderização, enquanto o React utiliza renderização no lado do cliente. A pré-renderização facilita estratégias eficazes de SEO, melhorando a classificação nos motores de busca.
+4.  **Roteamento Estruturado:** O Next.js fornece um sistema de arquivos pré-definido para roteamento, simplificando a configuração de páginas em comparação com opções de bibliotecas de roteamento do React.
+5.  **SEO Aprimorado:** A capacidade do Next.js de realizar renderização no lado do servidor (SSR) melhora as classificações de SEO, proporcionando uma experiência de usuário otimizada com tempos de carregamento eficientes.
+6.  **Pré-renderização Avançada:** Oferece métodos avançados de renderização, incluindo Client-Side Rendering (CSR), Server-Side Rendering (SSR), Static Site Generation (SSG) e Incremental Static Regeneration (ISR).
+7.  **Facilidade de Configuração:** O Next.js oferece opções de configuração automáticas e manuais, com a ferramenta CLI create-next-app agilizando a inicialização do projeto.
+8.  **Navegação Otimizada:** Utiliza componentes de link personalizados para otimizar a navegação e pré-carregar dados em segundo plano, melhorando o desempenho da aplicação.
+
+Em resumo, o Next.js é especialmente benéfico para projetos React que se beneficiam de pré-renderização, como lojas online, aplicativos de mídia social, sistemas de reserva de ingressos e plataformas de educação. Ele oferece uma experiência de desenvolvimento mais rápida, melhor desempenho e recursos avançados de renderização, tornando-o uma escolha sólida para projetos ambiciosos.
+
+### Sites que utilizam Next.js em seu interior
+
+1. **Hulu:**
+
+   - **URL:** [Hulu](https://www.hulu.com/)
+   - **Detalhes:** Hulu é um serviço de streaming de vídeo on-demand que usa Next.js para oferecer uma experiência de usuário rápida e moderna em sua plataforma web.
+
+2. **Twitch:**
+
+   - **URL:** [Twitch](https://www.twitch.tv/)
+   - **Detalhes:** Twitch, a plataforma líder em transmissões ao vivo para gamers, utiliza Next.js em algumas partes de seu site para melhorar a performance e a experiência do usuário.
+
+3. **TikTok:**
+
+   - **URL:** [TikTok](https://www.tiktok.com/)
+   - **Detalhes:** TikTok, a popular plataforma de mídia para vídeos curtos, usa Next.js para sua versão web, permitindo uma navegação rápida e eficiente.
+
+4. **Auth0:**
+
+   - **URL:** [Auth0](https://auth0.com/)
+   - **Detalhes:** Auth0, um provedor de autenticação e autorização como serviço, utiliza Next.js em seu site para uma entrega de conteúdo otimizada e segura.
+
+5. **Vercel:**
+   - **URL:** [Vercel](https://vercel.com/)
+   - **Detalhes:** Vercel, a empresa por trás do Next.js, naturalmente usa seu próprio framework em seu site, demonstrando as melhores práticas e a potência do Next.js.
+
 ### Como iniciar um projeto em Next.js
 
 #### 1. Criar um novo projeto Next.js
 
 ```batch
 npx create-next-app@latest
-cd my-next-tailwind-app
 ```
 
 #### 2. Responder o questionário de configuração no terminal
 
 ```batch
-√ What is your project named? ... .  // Escolha um nome qualquer ou um "." para instalar na raiz.
+√ What is your project named? ... my-next-tailwind-app  // Escolha um nome qualquer ou um "." para instalar na raiz.
 √ Would you like to use TypeScript? ... Yes
 √ Would you like to use ESLint? ... Yes
 √ Would you like to use Tailwind CSS? ... Yes
@@ -167,6 +207,7 @@ Após o questionário as dependencias necessárias serão instaladas e o projeto
 Execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
 ```batch
+cd my-next-tailwind-app
 npm run dev
 ```
 
@@ -225,26 +266,13 @@ export default function Home() {
 
 `* O código acima foi resumido para fins didáticos *`
 
-## Next.js como ferramenta
-
-### Por que utilizar o next.js como framework React?
-
-Utilizar o Next.js como framework React oferece diversas vantagens:
-
-1.  **Desenvolvimento Rápido:** O Next.js simplifica o desenvolvimento avançado de aplicativos React, proporcionando recursos prontos para uso e um compilador próprio que acelera os tempos de construção.
-2.  **Performance:** O Next.js permite pré-carregar dados no servidor, resultando em tempos de carregamento mais rápidos em comparação com aplicações React tradicionais.
-3.  **Renderização e SEO:** Oferece pré-renderização, enquanto o React utiliza renderização no lado do cliente. A pré-renderização facilita estratégias eficazes de SEO, melhorando a classificação nos motores de busca.
-4.  **Roteamento Estruturado:** O Next.js fornece um sistema de arquivos pré-definido para roteamento, simplificando a configuração de páginas em comparação com opções de bibliotecas de roteamento do React.
-5.  **SEO Aprimorado:** A capacidade do Next.js de realizar renderização no lado do servidor (SSR) melhora as classificações de SEO, proporcionando uma experiência de usuário otimizada com tempos de carregamento eficientes.
-6.  **Pré-renderização Avançada:** Oferece métodos avançados de renderização, incluindo Client-Side Rendering (CSR), Server-Side Rendering (SSR), Static Site Generation (SSG) e Incremental Static Regeneration (ISR).
-7.  **Facilidade de Configuração:** O Next.js oferece opções de configuração automáticas e manuais, com a ferramenta CLI create-next-app agilizando a inicialização do projeto.
-8.  **Navegação Otimizada:** Utiliza componentes de link personalizados para otimizar a navegação e pré-carregar dados em segundo plano, melhorando o desempenho da aplicação.
-
-Em resumo, o Next.js é especialmente benéfico para projetos React que se beneficiam de pré-renderização, como lojas online, aplicativos de mídia social, sistemas de reserva de ingressos e plataformas de educação. Ele oferece uma experiência de desenvolvimento mais rápida, melhor desempenho e recursos avançados de renderização, tornando-o uma escolha sólida para projetos ambiciosos.
-
 ## Criação de Rotas no Next.js
 
 O Next.js utiliza um sistema de roteamento baseado em arquivos, o que significa que as rotas são definidas pela estrutura de arquivos no diretório `app`. Isso torna a criação e gerenciamento de rotas incrivelmente simples e intuitivo. Vamos ver como isso funciona na prática.
+
+exemplo de rota: meusite.com.br/sobre/nosso-time
+
+Utilizando o React padrão, a criação de rotas necessita da instalação da biblioteca react-router-dom e uma configuração manual. Para o Next.js, o sistema de roteamento já vem pré instalado e configurado no projeto, sendo possivel criar uma aplicação com ou sem roteamento, basta escolher a opção desejada ao iniciar o projeto com o `create-next-app@latest`.
 
 ### Estrutura Básica de Rotas
 
@@ -418,3 +446,10 @@ Embora o Tailwind seja adequado para muitos projetos, sua abordagem utility-firs
 <hr>
 
 _Revisão Técnica:_ `Jonathan Oliveira Bergamo`
+
+Links úteis para estudo:
+
+- [https://daily.dev/blog/why-i-moved-from-styled-components-to-tailwind-css-and-whats-the-future-of-css-in-js]
+- [https://blog.bitsrc.io/comparing-styled-components-and-tailwind-css-50cdc6ee1c6c]
+
+
